@@ -1,0 +1,52 @@
+<!doctype html>
+<html><head>
+<script>
+function add()
+
+{
+var num1,num2,sum;
+num1=parseInt(document.getElementById("textFirstNumber").value);
+num2=parseInt(document.getElementById("textSecondNumber").value);
+sum=num1+num2;
+document.getElementById("textAnswer1").value=sum;
+}
+function sub()
+{
+var num1,num2,sub;
+num1=parseInt(document.getElementById("textFirstNumber").value);
+num2=parseInt(document.getElementById("textSecondNumber").value);
+sum=num1-num2;
+document.getElementById("textAnswer2").value=sum;
+}
+function mul()
+{
+var num1,num2,mul;
+num1=parseInt(document.getElementById("textFirstNumber").value);
+num2=parseInt(document.getElementById("textSecondNumber").value);
+sum=num1*num2;
+document.getElementById("textAnswer3").value=sum;
+}
+function div()
+{
+var num1,num2,div;
+num1=parseInt(document.getElementById("textFirstNumber").value);
+num2=parseInt(document.getElementById("textSecondNumber").value);
+sum=num1/num2;
+document.getElementById("textAnswer4").value=sum;
+}
+
+</script>
+</head>
+<body>
+<p>First Number:<input id="textFirstNumber"></p>
+<p>Second Number:<input id="textSecondNumber"></p>
+<button onclick="add()">Add Them</button>
+<p>sum=<input id="textAnswer1"></p>
+<button onclick="sub()">Add Them</button>
+<p>sub=<input id="textAnswer2"></p>
+<button onclick="mul()">Add Them</button>
+<p>mul=<input id="textAnswer3"></p>
+<button onclick="div()">Add Them</button>
+<p>div=<input id="textAnswer4"></p>
+</body>
+</html>
